@@ -4,12 +4,12 @@
 
 ## 技能列表
 
-| 技能 | 描述 | 难度 |
-|------|------|------|
-| [sql-query-writer](skills/sql-query-writer/SKILL.md) | SQL 查询生成、优化与调试，MySQL/PostgreSQL/SQLite | 入门 |
-| [data-pipeline-builder](skills/data-pipeline-builder/SKILL.md) | 数据处理流水线：ETL、清洗、转换、调度 | 进阶 |
-| [data-analysis-toolkit](skills/data-analysis-toolkit/SKILL.md) | 描述统计、相关性分析、假设检验、数据洞察 | 入门 |
-| [data-visualizer](skills/data-visualizer/SKILL.md) | 图表生成：折线图/柱状图/热力图/散点图，matplotlib/echarts | 入门 |
+| 技能 | 描述 | 难度 | 来源 |
+|------|------|------|------|
+| [sql-query-writer](skills/sql-query-writer/SKILL.md) | SQL 查询生成、优化与调试，MySQL/PostgreSQL/SQLite | 入门 | 原创 |
+| [data-pipeline-builder](skills/data-pipeline-builder/SKILL.md) | 数据处理流水线：ETL、清洗、转换、调度 | 进阶 | 原创 |
+| [data-analysis-toolkit](skills/data-analysis-toolkit/SKILL.md) | 描述统计、相关性分析、假设检验、数据洞察 | 入门 | 原创 |
+| [data-visualizer](skills/data-visualizer/SKILL.md) | 图表生成：折线图/柱状图/热力图/散点图，matplotlib/echarts | 入门 | 原创 |
 
 ## 安装
 
