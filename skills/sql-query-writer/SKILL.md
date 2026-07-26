@@ -1,55 +1,56 @@
 ---
 name: sql-query-writer
-description: SQL 查询生成与优化，MySQL/PostgreSQL/SQLite，从自然语言到高性能 SQL
+description: SQL 查询编写与优化：数据库 schema 设计、查询优化、PlanetScale CLI 自动化
 source:
-  type: original
+  type: derived
   repo: skills-repo/data-scientist
   path: skills/sql-query-writer/SKILL.md
   version: 1.0.0
   updated: 2026-07-26
+  url: https://skills.sh/planetscale/skills/planetscale-pscale-cli-automation
 metadata:
-  category: SQL
+  category: 数据查询
   platform: 通用
-  difficulty: 入门
+  difficulty: 进阶
 ---
 
 # SQL 查询编写器
 
-> 从自然语言需求生成高性能 SQL 查询：建表、增删改查、JOIN、子查询、窗口函数、索引优化。
+> 数据库查询编写、优化与 Schema 设计：覆盖 MySQL/PostgreSQL，支持 CLI 自动化。
 
 ## 能力
 
-- **自然语言转 SQL**：描述需求即可生成对应查询
-- **多方言支持**：MySQL、PostgreSQL、SQLite 语法适配
-- **查询优化**：分析 EXPLAIN 输出，建议索引、重写慢查询
-- **Schema 理解**：读取已有表结构，生成符合规范的查询
-- **数据迁移**：生成 ALTER TABLE、数据迁移脚本
+- **查询编写**：SELECT/INSERT/UPDATE/DELETE 语句构造，子查询、JOIN、聚合
+- **Schema 设计**：表结构设计、索引策略、外键约束、范式化
+- **查询优化**：EXPLAIN 分析、索引建议、慢查询定位
+- **CLI 自动化**：pscale 命令行工具的非交互式调用、JSON 格式输出
+- **分支工作流**：数据库分支管理、Schema 变更审查、安全部署
 
 ## 使用方式
 
 ```
-/sql-query-writer 查出过去 30 天每天的新增用户数
-/sql-query-writer 优化这个慢查询: [粘贴 SQL]
-/sql-query-writer 设计一个电商订单表结构
+/sql-query-writer 为这个需求编写 SQL 查询
+/sql-query-writer 审查这个数据库 schema 的设计
+/sql-query-writer 优化这个慢查询的性能
 ```
 
 ## 工作流
 
-1. 接收查询需求或现有 SQL
-2. 理解上下文（表结构、业务逻辑）
-3. 生成 SQL（附注释说明）
-4. 预测性能问题并给出优化建议
-5. 输出可执行的完整查询
+1. 理解查询需求和数据关系
+2. 编写 SQL 语句（SELECT/INSERT/UPDATE/DELETE）
+3. 验证查询正确性（语法、逻辑、边界）
+4. EXPLAIN 分析性能瓶颈
+5. 提供优化建议和索引方案
 
 ## 适用场景
 
-- 不熟悉 SQL 的开发者需要写数据库查询
-- 复杂 JOIN/子查询/窗口函数手写容易出错
-- 慢查询需要分析和重写
-- 新项目设计数据库表结构
+- 数据库查询编写和调试
+- Schema 设计与审查
+- 查询性能优化
+- 数据库 CLI 操作自动化
 
 ## 限制
 
-- 不连接实际数据库，不执行查询
-- 复杂 OLAP/数据仓库场景不在范围内
-- 优化建议依赖提供的表结构信息完整性
+- 主要覆盖 MySQL/PostgreSQL 语法
+- 不涉及 NoSQL 数据库
+- 不涉及数据迁移和 ETL 流程

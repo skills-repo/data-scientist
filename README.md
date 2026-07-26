@@ -1,22 +1,46 @@
-# Data Scientist — 数据科学家技能库
+# 数据科学技能库
 
-> 面向个人和小团队的数据工作技能集，覆盖 SQL 查询、数据流水线、统计分析和可视化四大场景。
+> AI Agent Skills for Data Science —— 覆盖数据管道、分析工具包、可视化图表、SQL 查询
 
-## 技能列表
+## 定位
 
-| 技能 | 描述 | 难度 | 来源 |
+为数据工程师和分析师提供一套可安装的 AI Agent 数据技能，让 Claude Code 成为你的数据搭档。
+
+## 核心理念
+
+> 让数据处理自动化。从提取到分析，从 SQL 到可视化，一个人也能高效产出。
+
+- **流式处理**——数据从来源到洞察的自动化流水线
+- **低门槛分析**——不需要数据科学家也能完成探索性分析
+- **可视化优先**——好的图表比数字更有说服力
+
+## 技能清单
+
+| 环节 | 技能 | 描述 | 来源 |
 |------|------|------|------|
-| [sql-query-writer](skills/sql-query-writer/SKILL.md) | SQL 查询生成、优化与调试，MySQL/PostgreSQL/SQLite | 入门 | 原创 |
-| [data-pipeline-builder](skills/data-pipeline-builder/SKILL.md) | 数据处理流水线：ETL、清洗、转换、调度 | 进阶 | 原创 |
-| [data-analysis-toolkit](skills/data-analysis-toolkit/SKILL.md) | 描述统计、相关性分析、假设检验、数据洞察 | 入门 | 原创 |
-| [data-visualizer](skills/data-visualizer/SKILL.md) | 图表生成：折线图/柱状图/热力图/散点图，matplotlib/echarts | 入门 | 原创 |
+| 📡 数据管道 | `data-pipeline-builder` | 数据管道与 ETL 自动化：提取、转换、加载，调度与错误处理 | [衍生](https://skills.sh/claude-office-skills/skills/data-pipeline) |
+| 📊 分析工具 | `data-analysis-toolkit` | 数据分析：电子表格分析、洞察生成、趋势检测、可视化图表 | [衍生](https://skills.sh/claude-office-skills/skills/data-analysis) |
+| 📈 可视化 | `data-visualizer` | AntV 图表可视化：20+ 图表类型，柱状图、饼图、雷达图等 | [衍生](https://skills.sh/antvis/chart-visualization-skills/chart-visualization) |
+| 🗄️ SQL 查询 | `sql-query-writer` | SQL 查询编写与优化：schema 设计、查询优化、CLI 自动化 | [衍生](https://skills.sh/planetscale/skills/planetscale-pscale-cli-automation) |
 
-## 安装
+## 快速开始
 
 ```bash
-git clone https://github.com/skills-repo/data-scientist.git
+npx skills add skills-repo/data-scientist@data-pipeline-builder -g -y
+npx skills add skills-repo/data-scientist@data-analysis-toolkit -g -y
+npx skills add skills-repo/data-scientist@data-visualizer -g -y
+npx skills add skills-repo/data-scientist@sql-query-writer -g -y
 ```
 
-## 贡献
+## 推荐工作流
 
-欢迎提交 Issue 或 PR 补充新的数据科学技能。请参考 [CONTRIBUTING.md](../skills-repo-admin/rules/skill-format.md) 的格式规范。
+```
+数据提取 → 分析探索 → 可视化呈现 → SQL 深度查询
+data-     data-      data-        sql-
+pipeline  analysis   visualizer   query
+builder   toolkit                 writer
+```
+
+## 许可
+
+MIT

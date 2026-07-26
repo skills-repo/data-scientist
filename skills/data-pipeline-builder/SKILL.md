@@ -1,64 +1,56 @@
 ---
 name: data-pipeline-builder
-description: 数据处理流水线：ETL、清洗、转换、调度，面向个人和小项目
+description: 数据管道与 ETL 自动化：提取、转换、加载，调度与错误处理
 source:
-  type: original
+  type: derived
   repo: skills-repo/data-scientist
   path: skills/data-pipeline-builder/SKILL.md
   version: 1.0.0
   updated: 2026-07-26
+  url: https://skills.sh/claude-office-skills/skills/data-pipeline
 metadata:
   category: 数据工程
   platform: 通用
   difficulty: 进阶
 ---
 
-# 数据流水线构建器
+# 数据管道构建器
 
-> 为个人数据项目构建轻量级数据处理流水线：ETL、清洗、转换、调度。不是 Airflow 级的企业方案，是你能在 30 分钟内跑起来的数据管道。
+> 基于 n8n 的数据管道与 ETL 自动化：从多数据源提取、清洗转换、加载到目标存储。
 
 ## 能力
 
-- **ETL 流程设计**：Extract（CSV/API/DB）→ Transform（清洗/聚合）→ Load（输出到文件/DB）
-- **数据清洗**：缺失值处理、异常值检测、类型转换、去重、标准化
-- **格式转换**：CSV ↔ JSON ↔ Parquet ↔ SQL，编码检测与修复
-- **批处理脚本**：Python/Node.js 数据批处理脚本生成
-- **错误处理**：数据验证、重试逻辑、断点续传
+- **数据提取**：API、数据库、文件、Webhook 多源接入
+- **数据转换**：清洗、映射、聚合、增强
+- **数据加载**：数据库、数据仓库、文件系统、API 输出
+- **调度管理**：定时触发、依赖编排、重试机制
+- **错误处理**：失败告警、回滚策略、数据质量校验
 
 ## 使用方式
 
 ```
-/data-pipeline 设计一个从 API 拉取数据 → 清洗 → 存入 SQLite 的流水线
-/data-pipeline 这个 CSV 有脏数据，帮我写清洗脚本
-/data-pipeline 把 JSON 日志批量转成 Parquet
+/data-pipeline-builder 设计一个从 API 到数据库的 ETL 流程
+/data-pipeline-builder 帮我调试这个数据管道的转换逻辑
+/data-pipeline-builder 为这个数据源配置增量同步策略
 ```
 
 ## 工作流
 
-1. 描述数据源和目标
-2. AI 分析数据格式和质量问题
-3. 生成 ETL 流水线脚本（含错误处理和日志）
-4. 输出本地可运行代码
-
-## 技术栈选型
-
-| 场景 | 推荐工具 |
-|------|---------|
-| CSV/JSON 清洗 | Python + pandas |
-| API 数据拉取 | Python + requests + tenacity |
-| SQL 导入导出 | Python + SQLAlchemy |
-| 定时调度 | crontab / systemd timer |
-| 格式转换 | Python + pyarrow |
+1. 确认数据源和目标存储
+2. 设计提取策略（全量/增量/CDC）
+3. 定义转换规则和数据模型
+4. 配置调度和错误处理
+5. 运行验证和监控
 
 ## 适用场景
 
-- 个人数据项目的数据处理流程
-- 公开数据集清洗和导入
-- 多个数据源的定期同步
-- 日志分析和归档
+- 多源数据汇聚和分析
+- 数据仓库 ETL/ELT 构建
+- 实时数据流处理
+- 数据迁移项目
 
 ## 限制
 
-- 不涉及 Kafka/Spark/Flink 等流处理框架
-- 不适合 TB 级数据（那是大数据工程范围）
-- 生成的流水线需要本地环境安装依赖
+- 不涉及流处理框架（Flink/Spark）
+- 不涉及数据治理和元数据管理
+- 需要理解数据建模基础
