@@ -1,6 +1,6 @@
 ---
 name: sql-query-writer
-description: SQL 查询生成、优化与调试，支持 MySQL/PostgreSQL/SQLite，从自然语言到高性能 SQL
+description: SQL 查询生成与优化，MySQL/PostgreSQL/SQLite，从自然语言到高性能 SQL
 source:
   type: original
   repo: skills-repo/data-scientist

@@ -1,6 +1,6 @@
 ---
 name: data-pipeline-builder
-description: 数据处理流水线构建：ETL 流程、数据清洗、格式转换、批处理调度，面向个人和小项目
+description: 数据处理流水线：ETL、清洗、转换、调度，面向个人和小项目
 source:
   type: original
   repo: skills-repo/data-scientist

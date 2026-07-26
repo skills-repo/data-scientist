@@ -1,6 +1,6 @@
 ---
 name: data-visualizer
-description: 数据可视化图表生成：折线图、柱状图、热力图、散点图、饼图，支持 matplotlib/echarts/plotly
+description: 数据可视化图表：折线图/柱状图/热力图/散点图/饼图，matplotlib/echarts/plotly
 source:
   type: original
   repo: skills-repo/data-scientist

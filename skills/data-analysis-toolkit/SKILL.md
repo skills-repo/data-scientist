@@ -1,6 +1,6 @@
 ---
 name: data-analysis-toolkit
-description: 数据分析工具箱：描述统计、相关性分析、假设检验、趋势检测、数据洞察报告生成
+description: 数据分析工具箱：描述统计、相关性分析、假设检验、趋势检测、报告生成
 source:
   type: original
   repo: skills-repo/data-scientist
