@@ -1,0 +1,66 @@
+{
+  "_comment": "数据质量规则模板 —— 配合 scripts/data_quality_check.py 使用。复制后按业务表改写。规则分硬断言(fail，阻断下游)与软约束(warn，仅告警)：row_count/required_columns/primary_key/not_null/unique/ranges/allowed_values/regex/dates/ordering/comparisons 为硬断言，missing_rate_max 为软约束。",
+  "_usage": "python3 scripts/data_quality_check.py orders.csv --rules assets/data-quality-rules.json",
+  "_note": "以 _ 开头的键都是注释，脚本会自动跳过。规则里引用了表中不存在的列会直接判 FAIL——这是刻意设计：规则与表不匹配本身就是问题（字段被改名，或规则已过期）。所以复制模板后请删掉你表里没有的列。",
+
+  "_missing_tokens": "本表中哪些字面量应被当作缺失。脚本默认只认空串与 null/na/nan/none/nil；unknown、未知、-1、9999 这类伪装缺失必须显式声明，否则会被当成正常取值参与枚举与缺失率检查。先用 profile_dataset.py 看清有哪些伪装缺失值，再填下面这行。",
+  "missing_tokens": ["unknown", "未知", "-", "N/A"],
+
+  "row_count": {
+    "_comment": "上游断供会让行数骤降，重复加载会让行数翻倍。按历史日均量的 ±50% 设区间，比写死数字耐用。",
+    "min": 1,
+    "max": 10000000
+  },
+
+  "required_columns": [
+    "order_id",
+    "user_id",
+    "order_date",
+    "amount",
+    "status"
+  ],
+
+  "primary_key": ["order_id"],
+
+  "not_null": [
+    "order_id",
+    "user_id",
+    "order_date",
+    "status"
+  ],
+
+  "missing_rate_max": {
+    "_comment": "允许缺失但不该失控的列。阈值取历史正常水位再放宽一点，突破即说明上游埋点或关联出了问题。",
+    "amount": 0.02,
+    "channel": 0.05
+  },
+
+  "unique": [],
+
+  "ranges": {
+    "_comment": "金额类字段务必设上界：一次单位错误(元写成分)就会把均值毁掉，而它不会触发任何非空约束。",
+    "amount": { "min": 0, "max": 1000000 }
+  },
+
+  "allowed_values": {
+    "_comment": "枚举白名单是发现上游偷偷加状态的最快方式。新值出现就该有人确认，而不是被下游 CASE WHEN 静默归入 others。",
+    "status": ["paid", "pending", "shipped", "refunded", "cancelled"],
+    "channel": ["app", "web", "mini"]
+  },
+
+  "regex": {
+    "_comment": "只对格式确实固定的字段用，正则过严会天天误报。",
+    "user_id": "^U\\d{3,12}$"
+  },
+
+  "dates": {
+    "_comment": "max 建议设成跑批当天：未来日期几乎总是时区错误或测试数据污染。",
+    "order_date": { "format": "%Y-%m-%d", "min": "2020-01-01", "max": "2030-12-31" }
+  },
+
+  "_ordering": "跨字段时间先后。按 ISO 字符串比较，要求两列都是 YYYY-MM-DD 格式。示例（表里有 ship_date 时启用）：[[\"order_date\", \"ship_date\"]]",
+  "ordering": [],
+
+  "_comparisons": "跨字段数值勾稽，是发现口径错乱最有效的一类断言。op 支持 <= < >= > ==。示例（表里有 paid_amount 时启用）：[{\"left\": \"paid_amount\", \"op\": \"<=\", \"right\": \"amount\"}]",
+  "comparisons": []
+}
