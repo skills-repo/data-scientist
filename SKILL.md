@@ -59,6 +59,7 @@ metadata:
 | ETL 任务落地：提取转换加载、调度与错误处理（细粒度调用） | `skills/data-pipeline-builder/SKILL.md` | ETL, 提取, 转换, 加载, 调度, 错误处理 |
 | AntV 图表生成，20+ 图表类型（细粒度调用） | `skills/data-visualizer/SKILL.md` | AntV, 折线图, 柱状图, 饼图, 散点图, 图表生成 |
 | SQL 编写优化、schema 设计、PlanetScale CLI（细粒度调用） | `skills/sql-query-writer/SKILL.md` | SQL 优化, schema 设计, PlanetScale, pscale |
+| 脚本完整运行示例、参数与常见坑（按需加载） | `references/scripts-usage.md` | profile, ab_test, data_quality, --strict, --json |
 
 > **路由规则**：
 > 1. 任务是**判断"该怎么分析、结论能不能信"** → 读 `references/`。
@@ -77,26 +78,7 @@ metadata:
 | `scripts/ab_test_calc.py` | A/B 实验计算器：`power` 样本量 / `srm` 分流校验 / `prop` 比率检验 / `mean` 均值检验 | 实验设计与结果判定 |
 | `scripts/data_quality_check.py` | JSON 规则驱动的数据质量断言，硬断言失败退出码 1 | 管道门禁、清洗验收 |
 
-运行示例：
-
-```bash
-# 1) 拿到数据先看画像——伪装缺失、极值、重复行会在这里暴露
-python3 scripts/profile_dataset.py data.csv
-python3 scripts/profile_dataset.py data.tsv --sep '\t' --json > profile.json
-
-# 2) 实验开跑前算样本量；开跑后先验 SRM，再做显著性检验
-python3 scripts/ab_test_calc.py power --baseline 0.10 --mde 0.01
-python3 scripts/ab_test_calc.py srm  --counts 502341 497108
-python3 scripts/ab_test_calc.py prop --a-n 50000 --a-x 1500 --b-n 50000 --b-x 1620
-python3 scripts/ab_test_calc.py mean --a-n 4000 --a-mean 82.1 --a-sd 31.5 \
-                                     --b-n 4050 --b-mean 85.3 --b-sd 33.2
-
-# 3) 把清洗规则固化成门禁，接进管道（退出码 1 即阻断下游）
-python3 scripts/data_quality_check.py data.csv --rules assets/data-quality-rules.json
-```
-
-> 先跑 `profile_dataset.py` 找出伪装缺失值，再把它们写进规则文件的 `missing_tokens`——
-> 质量门禁**不猜哨兵值**，没声明的 `unknown` 会被当作正常取值参与枚举检查。
+运行示例与参数见 `references/scripts-usage.md`（完整命令、参数说明、常见坑）。
 
 ## 模板资源
 
