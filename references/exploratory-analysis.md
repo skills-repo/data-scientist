@@ -122,3 +122,11 @@
 3. **口径备忘**：所有字段的实际含义、过滤条件、时间窗——下次分析直接复用，避免重复踩坑
 
 用 `assets/eda-report-template.md` 组织输出。核心要求是：**任何一个数字都能追溯到它的口径和过滤条件**。
+
+## 相关子技能与层次边界
+
+> 本文属**探索分析方法层**（EDA、数据画像、陷阱识别）；具体电子表格分析与报告生成交给子技能。
+
+- 电子表格分析、洞察生成、趋势检测、统计报告 → `skills/data-analysis-toolkit/SKILL.md`
+- 清洗决策 → `references/data-cleaning.md`
+- 指标口径 → `references/metrics-design.md`

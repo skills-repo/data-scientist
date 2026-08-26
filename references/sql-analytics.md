@@ -203,3 +203,11 @@ SELECT * FROM final ORDER BY users DESC
 
 > 最后一条最重要：**分析结果一定要和一个独立来源交叉验证**。
 > 哪怕只是"总订单数和后台看板对得上"，也比自己算了一遍自己信更可靠。
+
+## 相关子技能与层次边界
+
+> 本文属**分析方法层**（粒度、窗口函数、性能原则、陷阱判断）；具体 SQL 编写与优化操作交给子技能。
+
+- 写/优化 SQL、做 schema 设计与 PlanetScale CLI → `skills/sql-query-writer/SKILL.md`
+- 指标口径怎么定、异动怎么归因 → `references/metrics-design.md`
+- 拿到脏数据先判断清洗策略 → `references/data-cleaning.md`

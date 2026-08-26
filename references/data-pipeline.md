@@ -174,3 +174,11 @@ WHERE updated_at > {last_watermark}
 - [ ] 回填：有可执行的回填流程，走同一套代码
 - [ ] 文档：字段口径、更新频率、已知限制写在能被找到的地方
 - [ ] 负责人：有明确的 owner，不是"数据组"
+
+## 相关子技能与层次边界
+
+> 本文属**管道工程方法层**（分层、幂等、增量、质量断言）；具体 ETL 落地与调度操作交给子技能。
+
+- ETL 任务落地、提取转换加载、调度与错误处理 → `skills/data-pipeline-builder/SKILL.md`
+- 清洗/转换规则怎么定 → `references/data-cleaning.md`
+- 口径与指标定义 → `references/metrics-design.md`

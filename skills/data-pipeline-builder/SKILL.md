@@ -54,3 +54,10 @@ metadata:
 - 不涉及流处理框架（Flink/Spark）
 - 不涉及数据治理和元数据管理
 - 需要理解数据建模基础
+
+## 相关分析参考
+
+> 本子技能属**工具执行层**（ETL 落地、调度、错误处理）；管道工程原则见 reference。
+
+- 分层、幂等、增量、质量断言方法 → `references/data-pipeline.md`
+- 清洗/转换规则决策 → `references/data-cleaning.md`

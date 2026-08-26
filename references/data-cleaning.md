@@ -144,3 +144,11 @@
 
 有了这份日志，三个月后有人问"为什么这个月少了 8000 单"，你能在 30 秒内回答。
 没有它，你只能重跑一遍并祈祷结果一样。
+
+## 相关子技能与层次边界
+
+> 本文属**清洗方法层**（缺失/重复/异常/一致性决策）；具体电子表格分析与批量处理交给子技能。
+
+- 电子表格上的清洗与分析 → `skills/data-analysis-toolkit/SKILL.md`
+- 管道中的清洗转换 → `references/data-pipeline.md`
+- 探索性分析先做什么 → `references/exploratory-analysis.md`

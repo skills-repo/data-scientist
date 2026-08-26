@@ -149,3 +149,11 @@ Y_adjusted = Y - θ × (X_pre - mean(X_pre))
 3. **实验结论不设有效期**。
    两年前测出的最优方案，在用户结构和竞品环境变化后可能已经失效。
    核心策略应定期用 holdout 重新验证。
+
+## 相关子技能与层次边界
+
+> 本文属**实验方法层**（设计、SRM、CUPED、解读）；统计计算与报告交给子技能。
+
+- 统计报告与检验计算 → `skills/data-analysis-toolkit/SKILL.md`
+- 检验选择与 p 值解读 → `references/statistical-inference.md`
+- 样本量与 MDE 口径 → `references/metrics-design.md`

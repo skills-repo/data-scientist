@@ -60,3 +60,12 @@ python3 scripts/data_quality_check.py data.csv \
 **常见坑**：
 - 质量门禁**不猜哨兵值**：没在 `missing_tokens` 里声明的 `unknown` 会被当作正常取值参与枚举检查，漏声明 = 漏检。
 - 先跑 `profile_dataset.py` 找出伪装缺失值，再把它们写进规则文件的 `missing_tokens`，再接门禁。
+
+## 相关引用与层次边界
+
+> 本文是 `scripts/` 的**使用说明层**；方法背景见对应 reference。
+
+- 数据质量规则与管道门禁 → `references/data-pipeline.md`
+- 数据画像脚本背景 → `references/exploratory-analysis.md`
+- A/B 检验脚本背景 → `references/experimentation-ab-testing.md` / `references/statistical-inference.md`
+- ETL 落地操作 → `skills/data-pipeline-builder/SKILL.md`

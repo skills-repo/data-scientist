@@ -54,3 +54,10 @@ metadata:
 - 主要覆盖 MySQL/PostgreSQL 语法
 - 不涉及 NoSQL 数据库
 - 不涉及数据迁移和 ETL 流程
+
+## 相关分析参考
+
+> 本子技能属**工具执行层**（SQL 编写、优化、schema、CLI）；分析口径与判断标准见 reference。
+
+- 分析型 SQL 的粒度、窗口函数、性能原则 → `references/sql-analytics.md`
+- 指标口径与异动归因 → `references/metrics-design.md`

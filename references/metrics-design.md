@@ -159,3 +159,11 @@ updated: 2026-08-06，历史口径变更见 changelog
 每一步都要有证据，不能靠"应该是……吧"。归因结论要能被复现：
 "7 月 15 日 GMV 环比 -12%，其中 -9pp 来自 iOS 渠道转化率下跌，
 与当日 14:30 上线的支付 SDK 版本时间吻合，回滚后恢复。"
+
+## 相关子技能与层次边界
+
+> 本文属**指标体系方法层**（定义、拆解、口径治理）；电子表格落表与图表生成交给子技能。
+
+- 电子表格落表、口径文档生成 → `skills/data-analysis-toolkit/SKILL.md`
+- 图表呈现口径 → `skills/data-visualizer/SKILL.md`
+- SQL 取数口径 → `references/sql-analytics.md`
