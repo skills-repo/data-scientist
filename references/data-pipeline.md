@@ -179,6 +179,6 @@ WHERE updated_at > {last_watermark}
 
 > 本文属**管道工程方法层**（分层、幂等、增量、质量断言）；具体 ETL 落地与调度操作交给子技能。
 
-- ETL 任务落地、提取转换加载、调度与错误处理 → `skills/data-pipeline-builder/SKILL.md`
-- 清洗/转换规则怎么定 → `references/data-cleaning.md`
-- 口径与指标定义 → `references/metrics-design.md`
+- ETL 任务落地、提取转换加载、调度与错误处理 → [`skills/data-pipeline-builder/SKILL.md`](../skills/data-pipeline-builder/SKILL.md)
+- 清洗/转换规则怎么定 → [`references/data-cleaning.md`](data-cleaning.md)
+- 口径与指标定义 → [`references/metrics-design.md`](metrics-design.md)

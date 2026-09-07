@@ -59,5 +59,5 @@ metadata:
 
 > 本子技能属**工具执行层**（SQL 编写、优化、schema、CLI）；分析口径与判断标准见 reference。
 
-- 分析型 SQL 的粒度、窗口函数、性能原则 → `references/sql-analytics.md`
-- 指标口径与异动归因 → `references/metrics-design.md`
+- 分析型 SQL 的粒度、窗口函数、性能原则 → [`references/sql-analytics.md`](../../references/sql-analytics.md)
+- 指标口径与异动归因 → [`references/metrics-design.md`](../../references/metrics-design.md)

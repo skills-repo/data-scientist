@@ -208,6 +208,6 @@ SELECT * FROM final ORDER BY users DESC
 
 > 本文属**分析方法层**（粒度、窗口函数、性能原则、陷阱判断）；具体 SQL 编写与优化操作交给子技能。
 
-- 写/优化 SQL、做 schema 设计与 PlanetScale CLI → `skills/sql-query-writer/SKILL.md`
-- 指标口径怎么定、异动怎么归因 → `references/metrics-design.md`
-- 拿到脏数据先判断清洗策略 → `references/data-cleaning.md`
+- 写/优化 SQL、做 schema 设计与 PlanetScale CLI → [`skills/sql-query-writer/SKILL.md`](../skills/sql-query-writer/SKILL.md)
+- 指标口径怎么定、异动怎么归因 → [`references/metrics-design.md`](metrics-design.md)
+- 拿到脏数据先判断清洗策略 → [`references/data-cleaning.md`](data-cleaning.md)

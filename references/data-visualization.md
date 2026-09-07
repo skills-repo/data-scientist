@@ -166,5 +166,5 @@ Tufte 的数据墨水比原则：每一滴墨水都应该编码数据。删除�
 
 > 本文属**可视化方法层**（图表选型、误导识别、仪表盘）；具体 AntV 图表生成交给子技能。
 
-- 生成 AntV 折线/柱状/饼图等 20+ 图表 → `skills/data-visualizer/SKILL.md`
-- 指标口径与误导编码的边界 → `references/metrics-design.md`
+- 生成 AntV 折线/柱状/饼图等 20+ 图表 → [`skills/data-visualizer/SKILL.md`](../skills/data-visualizer/SKILL.md)
+- 指标口径与误导编码的边界 → [`references/metrics-design.md`](metrics-design.md)

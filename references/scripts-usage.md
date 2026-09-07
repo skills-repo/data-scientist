@@ -65,7 +65,7 @@ python3 scripts/data_quality_check.py data.csv \
 
 > 本文是 `scripts/` 的**使用说明层**；方法背景见对应 reference。
 
-- 数据质量规则与管道门禁 → `references/data-pipeline.md`
-- 数据画像脚本背景 → `references/exploratory-analysis.md`
-- A/B 检验脚本背景 → `references/experimentation-ab-testing.md` / `references/statistical-inference.md`
-- ETL 落地操作 → `skills/data-pipeline-builder/SKILL.md`
+- 数据质量规则与管道门禁 → [`references/data-pipeline.md`](data-pipeline.md)
+- 数据画像脚本背景 → [`references/exploratory-analysis.md`](exploratory-analysis.md)
+- A/B 检验脚本背景 → [`references/experimentation-ab-testing.md`](experimentation-ab-testing.md) / [`references/statistical-inference.md`](statistical-inference.md)
+- ETL 落地操作 → [`skills/data-pipeline-builder/SKILL.md`](../skills/data-pipeline-builder/SKILL.md)

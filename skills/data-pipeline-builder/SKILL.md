@@ -59,5 +59,5 @@ metadata:
 
 > 本子技能属**工具执行层**（ETL 落地、调度、错误处理）；管道工程原则见 reference。
 
-- 分层、幂等、增量、质量断言方法 → `references/data-pipeline.md`
-- 清洗/转换规则决策 → `references/data-cleaning.md`
+- 分层、幂等、增量、质量断言方法 → [`references/data-pipeline.md`](../../references/data-pipeline.md)
+- 清洗/转换规则决策 → [`references/data-cleaning.md`](../../references/data-cleaning.md)

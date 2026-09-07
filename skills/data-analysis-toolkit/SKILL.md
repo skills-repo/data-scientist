@@ -59,8 +59,8 @@ metadata:
 
 > 本子技能属**工具执行层**（电子表格分析、洞察、报告）；分析方法与判断标准见 reference。
 
-- 探索性分析与陷阱自查 → `references/exploratory-analysis.md`
-- 缺失/重复/异常值清洗决策 → `references/data-cleaning.md`
-- p 值、置信区间、检验选择 → `references/statistical-inference.md`
-- A/B 实验设计与解读 → `references/experimentation-ab-testing.md`
-- 指标定义、口径治理、异动归因 → `references/metrics-design.md`
+- 探索性分析与陷阱自查 → [`references/exploratory-analysis.md`](../../references/exploratory-analysis.md)
+- 缺失/重复/异常值清洗决策 → [`references/data-cleaning.md`](../../references/data-cleaning.md)
+- p 值、置信区间、检验选择 → [`references/statistical-inference.md`](../../references/statistical-inference.md)
+- A/B 实验设计与解读 → [`references/experimentation-ab-testing.md`](../../references/experimentation-ab-testing.md)
+- 指标定义、口径治理、异动归因 → [`references/metrics-design.md`](../../references/metrics-design.md)

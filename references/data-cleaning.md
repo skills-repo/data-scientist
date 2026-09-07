@@ -149,6 +149,6 @@
 
 > 本文属**清洗方法层**（缺失/重复/异常/一致性决策）；具体电子表格分析与批量处理交给子技能。
 
-- 电子表格上的清洗与分析 → `skills/data-analysis-toolkit/SKILL.md`
-- 管道中的清洗转换 → `references/data-pipeline.md`
-- 探索性分析先做什么 → `references/exploratory-analysis.md`
+- 电子表格上的清洗与分析 → [`skills/data-analysis-toolkit/SKILL.md`](../skills/data-analysis-toolkit/SKILL.md)
+- 管道中的清洗转换 → [`references/data-pipeline.md`](data-pipeline.md)
+- 探索性分析先做什么 → [`references/exploratory-analysis.md`](exploratory-analysis.md)

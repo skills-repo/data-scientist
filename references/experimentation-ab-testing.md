@@ -154,6 +154,6 @@ Y_adjusted = Y - θ × (X_pre - mean(X_pre))
 
 > 本文属**实验方法层**（设计、SRM、CUPED、解读）；统计计算与报告交给子技能。
 
-- 统计报告与检验计算 → `skills/data-analysis-toolkit/SKILL.md`
-- 检验选择与 p 值解读 → `references/statistical-inference.md`
-- 样本量与 MDE 口径 → `references/metrics-design.md`
+- 统计报告与检验计算 → [`skills/data-analysis-toolkit/SKILL.md`](../skills/data-analysis-toolkit/SKILL.md)
+- 检验选择与 p 值解读 → [`references/statistical-inference.md`](statistical-inference.md)
+- 样本量与 MDE 口径 → [`references/metrics-design.md`](metrics-design.md)

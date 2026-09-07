@@ -164,5 +164,5 @@ p̄  = 两组预期比例的均值
 
 > 本文属**统计推断方法层**（p 值、置信区间、检验选择）；统计报告落地交给子技能。
 
-- 统计报告与描述统计生成 → `skills/data-analysis-toolkit/SKILL.md`
-- 实验设计中的检验选择 → `references/experimentation-ab-testing.md`
+- 统计报告与描述统计生成 → [`skills/data-analysis-toolkit/SKILL.md`](../skills/data-analysis-toolkit/SKILL.md)
+- 实验设计中的检验选择 → [`references/experimentation-ab-testing.md`](experimentation-ab-testing.md)

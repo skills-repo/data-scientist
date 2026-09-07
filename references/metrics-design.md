@@ -164,6 +164,6 @@ updated: 2026-08-06，历史口径变更见 changelog
 
 > 本文属**指标体系方法层**（定义、拆解、口径治理）；电子表格落表与图表生成交给子技能。
 
-- 电子表格落表、口径文档生成 → `skills/data-analysis-toolkit/SKILL.md`
-- 图表呈现口径 → `skills/data-visualizer/SKILL.md`
-- SQL 取数口径 → `references/sql-analytics.md`
+- 电子表格落表、口径文档生成 → [`skills/data-analysis-toolkit/SKILL.md`](../skills/data-analysis-toolkit/SKILL.md)
+- 图表呈现口径 → [`skills/data-visualizer/SKILL.md`](../skills/data-visualizer/SKILL.md)
+- SQL 取数口径 → [`references/sql-analytics.md`](sql-analytics.md)

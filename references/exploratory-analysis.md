@@ -127,6 +127,6 @@
 
 > 本文属**探索分析方法层**（EDA、数据画像、陷阱识别）；具体电子表格分析与报告生成交给子技能。
 
-- 电子表格分析、洞察生成、趋势检测、统计报告 → `skills/data-analysis-toolkit/SKILL.md`
-- 清洗决策 → `references/data-cleaning.md`
-- 指标口径 → `references/metrics-design.md`
+- 电子表格分析、洞察生成、趋势检测、统计报告 → [`skills/data-analysis-toolkit/SKILL.md`](../skills/data-analysis-toolkit/SKILL.md)
+- 清洗决策 → [`references/data-cleaning.md`](data-cleaning.md)
+- 指标口径 → [`references/metrics-design.md`](metrics-design.md)

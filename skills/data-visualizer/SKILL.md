@@ -60,5 +60,5 @@ metadata:
 
 > 本子技能属**工具执行层**（AntV 图表生成）；图表选型与误导识别见 reference。
 
-- 图表选型、误导编码识别、仪表盘设计 → `references/data-visualization.md`
-- 指标口径与呈现边界 → `references/metrics-design.md`
+- 图表选型、误导编码识别、仪表盘设计 → [`references/data-visualization.md`](../../references/data-visualization.md)
+- 指标口径与呈现边界 → [`references/metrics-design.md`](../../references/metrics-design.md)
