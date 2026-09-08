@@ -47,19 +47,19 @@ metadata:
 
 | 任务 | 读取 / 调用 | 关键词（grep 线索） |
 |------|------------|---------------------|
-| 拿到陌生数据先做什么、如何避免分析陷阱 | `references/exploratory-analysis.md` | EDA, 数据画像, 辛普森悖论, 幸存者偏差, 时间泄漏, 分母陷阱 |
-| 缺失值/重复/异常值/一致性的处理决策 | `references/data-cleaning.md` | 清洗, 缺失值, 去重, 异常值, 伪装缺失, 清洗日志 |
-| 分析型 SQL 的粒度、窗口函数与性能 | `references/sql-analytics.md` | SQL, JOIN 粒度, 窗口函数, 留存, 漏斗, 分区裁剪, 执行计划 |
-| p 值/置信区间/检验选择/多重比较 | `references/statistical-inference.md` | 假设检验, p 值, 置信区间, 效应量, 样本量, 检验力, 多重比较 |
-| A/B 实验的设计、执行与结果解读 | `references/experimentation-ab-testing.md` | AB 测试, 实验设计, 随机化单元, SRM, 峰值窥探, CUPED, MDE |
-| 图表选型、误导识别、仪表盘设计 | `references/data-visualization.md` | 可视化, 图表选型, 双 Y 轴, 色盲友好, chartjunk, 仪表盘 |
-| ETL/ELT 分层、幂等、迟到数据、回填 | `references/data-pipeline.md` | ETL, 数据管道, 幂等, 增量, 回填, schema 演进, 数据质量 |
-| 指标定义、分层拆解、口径治理、异动归因 | `references/metrics-design.md` | 指标体系, 北极星, 口径, 比率陷阱, 指标腐化, 异动归因 |
-| 电子表格分析、洞察生成、趋势检测与统计报告（细粒度调用） | `skills/data-analysis-toolkit/SKILL.md` | 电子表格, Excel, 洞察, 趋势检测, 统计报告 |
-| ETL 任务落地：提取转换加载、调度与错误处理（细粒度调用） | `skills/data-pipeline-builder/SKILL.md` | ETL, 提取, 转换, 加载, 调度, 错误处理 |
-| AntV 图表生成，20+ 图表类型（细粒度调用） | `skills/data-visualizer/SKILL.md` | AntV, 折线图, 柱状图, 饼图, 散点图, 图表生成 |
-| SQL 编写优化、schema 设计、PlanetScale CLI（细粒度调用） | `skills/sql-query-writer/SKILL.md` | SQL 优化, schema 设计, PlanetScale, pscale |
-| 脚本完整运行示例、参数与常见坑（按需加载） | `references/scripts-usage.md` | profile, ab_test, data_quality, --strict, --json |
+| 拿到陌生数据先做什么、如何避免分析陷阱 | [references/exploratory-analysis.md](references/exploratory-analysis.md) | EDA, 数据画像, 辛普森悖论, 幸存者偏差, 时间泄漏, 分母陷阱 |
+| 缺失值/重复/异常值/一致性的处理决策 | [references/data-cleaning.md](references/data-cleaning.md) | 清洗, 缺失值, 去重, 异常值, 伪装缺失, 清洗日志 |
+| 分析型 SQL 的粒度、窗口函数与性能 | [references/sql-analytics.md](references/sql-analytics.md) | SQL, JOIN 粒度, 窗口函数, 留存, 漏斗, 分区裁剪, 执行计划 |
+| p 值/置信区间/检验选择/多重比较 | [references/statistical-inference.md](references/statistical-inference.md) | 假设检验, p 值, 置信区间, 效应量, 样本量, 检验力, 多重比较 |
+| A/B 实验的设计、执行与结果解读 | [references/experimentation-ab-testing.md](references/experimentation-ab-testing.md) | AB 测试, 实验设计, 随机化单元, SRM, 峰值窥探, CUPED, MDE |
+| 图表选型、误导识别、仪表盘设计 | [references/data-visualization.md](references/data-visualization.md) | 可视化, 图表选型, 双 Y 轴, 色盲友好, chartjunk, 仪表盘 |
+| ETL/ELT 分层、幂等、迟到数据、回填 | [references/data-pipeline.md](references/data-pipeline.md) | ETL, 数据管道, 幂等, 增量, 回填, schema 演进, 数据质量 |
+| 指标定义、分层拆解、口径治理、异动归因 | [references/metrics-design.md](references/metrics-design.md) | 指标体系, 北极星, 口径, 比率陷阱, 指标腐化, 异动归因 |
+| 电子表格分析、洞察生成、趋势检测与统计报告（细粒度调用） | [skills/data-analysis-toolkit/SKILL.md](skills/data-analysis-toolkit/SKILL.md) | 电子表格, Excel, 洞察, 趋势检测, 统计报告 |
+| ETL 任务落地：提取转换加载、调度与错误处理（细粒度调用） | [skills/data-pipeline-builder/SKILL.md](skills/data-pipeline-builder/SKILL.md) | ETL, 提取, 转换, 加载, 调度, 错误处理 |
+| AntV 图表生成，20+ 图表类型（细粒度调用） | [skills/data-visualizer/SKILL.md](skills/data-visualizer/SKILL.md) | AntV, 折线图, 柱状图, 饼图, 散点图, 图表生成 |
+| SQL 编写优化、schema 设计、PlanetScale CLI（细粒度调用） | [skills/sql-query-writer/SKILL.md](skills/sql-query-writer/SKILL.md) | SQL 优化, schema 设计, PlanetScale, pscale |
+| 脚本完整运行示例、参数与常见坑（按需加载） | [references/scripts-usage.md](references/scripts-usage.md) | profile, ab_test, data_quality, --strict, --json |
 
 > **路由规则**：
 > 1. 任务是**判断"该怎么分析、结论能不能信"** → 读 `references/`。
@@ -74,11 +74,11 @@ metadata:
 
 | 脚本 | 用途 | 典型场景 |
 |------|------|----------|
-| `scripts/profile_dataset.py` | CSV/TSV 数据画像：类型推断、缺失率、基数、分布、异常值、伪装缺失、候选主键 | 拿到新数据的第一个动作 |
-| `scripts/ab_test_calc.py` | A/B 实验计算器：`power` 样本量 / `srm` 分流校验 / `prop` 比率检验 / `mean` 均值检验 | 实验设计与结果判定 |
-| `scripts/data_quality_check.py` | JSON 规则驱动的数据质量断言，硬断言失败退出码 1 | 管道门禁、清洗验收 |
+| [scripts/profile_dataset.py](scripts/profile_dataset.py) | CSV/TSV 数据画像：类型推断、缺失率、基数、分布、异常值、伪装缺失、候选主键 | 拿到新数据的第一个动作 |
+| [scripts/ab_test_calc.py](scripts/ab_test_calc.py) | A/B 实验计算器：`power` 样本量 / `srm` 分流校验 / `prop` 比率检验 / `mean` 均值检验 | 实验设计与结果判定 |
+| [scripts/data_quality_check.py](scripts/data_quality_check.py) | JSON 规则驱动的数据质量断言，硬断言失败退出码 1 | 管道门禁、清洗验收 |
 
-运行示例与参数见 `references/scripts-usage.md`（完整命令、参数说明、常见坑）。
+运行示例与参数见 [references/scripts-usage.md](references/scripts-usage.md)（完整命令、参数说明、常见坑）。
 
 ## 模板资源
 
@@ -86,13 +86,13 @@ metadata:
 
 | 模板 | 用途 | 对应 reference |
 |------|------|----------------|
-| `assets/data-quality-rules.json` | 数据质量规则模板（硬断言/软约束、哨兵值声明） | data-cleaning / data-pipeline |
-| `assets/eda-report-template.md` | 探索性分析报告模板，含 8 项陷阱自查 | exploratory-analysis |
-| `assets/experiment-design-doc.md` | 实验设计文档（预注册），含结果判定矩阵 | experimentation / statistical-inference |
-| `assets/metrics-dictionary.md` | 指标字典模板，含口径版本管理与陷阱速查 | metrics-design |
-| `assets/sql-analysis-patterns.sql` | 分析型 SQL 模式库：粒度校验、漏斗、留存、同环比、辛普森自检 | sql-analytics |
-| `assets/chart-review-checklist.md` | 图表交付前审查清单，含五种常见误导 | data-visualization |
-| `assets/pipeline-runbook.md` | 数据管道 Runbook：幂等、回填、故障处理、上线检查 | data-pipeline |
+| [assets/data-quality-rules.json](assets/data-quality-rules.json) | 数据质量规则模板（硬断言/软约束、哨兵值声明） | data-cleaning / data-pipeline |
+| [assets/eda-report-template.md](assets/eda-report-template.md) | 探索性分析报告模板，含 8 项陷阱自查 | exploratory-analysis |
+| [assets/experiment-design-doc.md](assets/experiment-design-doc.md) | 实验设计文档（预注册），含结果判定矩阵 | experimentation / statistical-inference |
+| [assets/metrics-dictionary.md](assets/metrics-dictionary.md) | 指标字典模板，含口径版本管理与陷阱速查 | metrics-design |
+| [assets/sql-analysis-patterns.sql](assets/sql-analysis-patterns.sql) | 分析型 SQL 模式库：粒度校验、漏斗、留存、同环比、辛普森自检 | sql-analytics |
+| [assets/chart-review-checklist.md](assets/chart-review-checklist.md) | 图表交付前审查清单，含五种常见误导 | data-visualization |
+| [assets/pipeline-runbook.md](assets/pipeline-runbook.md) | 数据管道 Runbook：幂等、回填、故障处理、上线检查 | data-pipeline |
 
 ## 核心原则（始终遵循）
 

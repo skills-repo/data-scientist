@@ -30,7 +30,7 @@
 
 ## 三、数据画像：先量化，再看图
 
-用 `scripts/profile_dataset.py` 一次性拿到全局画像，重点关注五类信号：
+用 [scripts/profile_dataset.py](../scripts/profile_dataset.py) 一次性拿到全局画像，重点关注五类信号：
 
 | 信号 | 含义与处置 |
 |------|-----------|
@@ -121,7 +121,7 @@
    `statistical-inference.md` 与 `experimentation-ab-testing.md`）
 3. **口径备忘**：所有字段的实际含义、过滤条件、时间窗——下次分析直接复用，避免重复踩坑
 
-用 `assets/eda-report-template.md` 组织输出。核心要求是：**任何一个数字都能追溯到它的口径和过滤条件**。
+用 [assets/eda-report-template.md](../assets/eda-report-template.md) 组织输出。核心要求是：**任何一个数字都能追溯到它的口径和过滤条件**。
 
 ## 相关子技能与层次边界
 

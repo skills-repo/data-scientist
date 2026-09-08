@@ -1,6 +1,6 @@
 # 实验设计文档：{{实验名称}}
 
-> 配套 `references/experimentation-ab-testing.md` 与 `references/statistical-inference.md`。
+> 配套 [references/experimentation-ab-testing.md](../references/experimentation-ab-testing.md) 与 [references/statistical-inference.md](../references/statistical-inference.md)。
 > **这份文档必须在实验开跑前写完并评审**。事后补写的设计文档没有防作弊价值——
 > 预注册的意义就在于把判定标准锁死在看到数据之前。
 

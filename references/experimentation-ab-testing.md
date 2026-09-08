@@ -5,7 +5,7 @@
 
 ## 一、开始前必须写下的实验方案
 
-**在看到任何数据之前**把下面这些定死，写进文档（用 `assets/experiment-design-doc.md`）。
+**在看到任何数据之前**把下面这些定死，写进文档（用 [assets/experiment-design-doc.md](../assets/experiment-design-doc.md)）。
 事后再定义等于自欺欺人。
 
 | 项 | 要求 |

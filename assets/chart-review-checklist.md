@@ -1,6 +1,6 @@
 # 图表交付前审查清单
 
-> 配套 `references/data-visualization.md`。
+> 配套 [references/data-visualization.md](../references/data-visualization.md)。
 > 每张要给别人看的图，交付前逐条过一遍。**打不满的项要么改图，要么在图注里交代。**
 
 ---

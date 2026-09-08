@@ -1,6 +1,6 @@
 # 数据管道 Runbook：{{管道名称}}
 
-> 配套 `references/data-pipeline.md`。
+> 配套 [references/data-pipeline.md](../references/data-pipeline.md)。
 > 这份文档要能让**不熟悉这条管道的人在凌晨三点照着修**。写的时候设想读者是明天的自己，且已经忘光了。
 
 | 项 | 内容 |

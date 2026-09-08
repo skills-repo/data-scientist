@@ -1,6 +1,6 @@
 # 探索性分析报告：{{分析主题}}
 
-> 配套 `references/exploratory-analysis.md`。先跑 `scripts/profile_dataset.py` 拿到画像，再填本模板。
+> 配套 [references/exploratory-analysis.md](../references/exploratory-analysis.md)。先跑 [scripts/profile_dataset.py](../scripts/profile_dataset.py) 拿到画像，再填本模板。
 > 填写原则：**先写结论，再写证据**。读者只看前两节就该知道该不该行动。
 
 ---
@@ -99,5 +99,5 @@
 - [ ] 结论与建议（本文档第 1–2 节）
 - [ ] 可复现的查询/脚本（路径：{{}}）
 - [ ] 关键图表（每张图有标题、坐标轴单位、数据来源与截止时间）
-- [ ] 数据质量规则已沉淀进 `assets/data-quality-rules.json`
+- [ ] 数据质量规则已沉淀进 [assets/data-quality-rules.json](data-quality-rules.json)
 - [ ] 口径已登记进指标字典

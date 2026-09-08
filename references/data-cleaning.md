@@ -108,8 +108,8 @@
 - **参照完整性**：明细表的 `user_id` 必须在用户表中存在（孤儿记录是数据链路断裂的信号）
 - **总量守恒**：清洗前后关键指标的总和应当对得上，对不上要能解释差额
 
-把这些写成断言，用 `scripts/data_quality_check.py` 配合
-`assets/data-quality-rules.json` 每次跑，而不是靠人记得检查。
+把这些写成断言，用 [scripts/data_quality_check.py](../scripts/data_quality_check.py) 配合
+[assets/data-quality-rules.json](../assets/data-quality-rules.json) 每次跑，而不是靠人记得检查。
 
 ## 八、把清洗变成可持续的质量保障
 

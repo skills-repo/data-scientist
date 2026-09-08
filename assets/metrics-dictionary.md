@@ -1,6 +1,6 @@
 # 指标字典：{{业务域}}
 
-> 配套 `references/metrics-design.md`。
+> 配套 [references/metrics-design.md](../references/metrics-design.md)。
 > 指标字典的价值不在"记录了什么"，而在**同一个指标名在全公司只有一个口径**。
 > 会上出现两个 DAU 的那一刻，字典就已经失效了。
 

@@ -49,7 +49,7 @@
 
 ## 陷阱自查（出结论前必过）
 
-发布任何分析结论前，逐条检查 `references/exploratory-analysis.md` 第 8 节的清单：
+发布任何分析结论前，逐条检查 [references/exploratory-analysis.md](references/exploratory-analysis.md) 第 8 节的清单：
 辛普森悖论、幸存者偏差、时间泄漏、分母陷阱、选择偏差、回归到均值、多重比较、时间窗口。
 
 **这是本技能被调用时最有价值的动作**，不要因为"用户只是想快速看个数"而跳过。

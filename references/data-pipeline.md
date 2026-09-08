@@ -131,7 +131,7 @@ WHERE updated_at > {last_watermark}
 
 ## 八、数据质量：把断言嵌进管道
 
-用 `scripts/data_quality_check.py` 配合 `assets/data-quality-rules.json`，
+用 [scripts/data_quality_check.py](../scripts/data_quality_check.py) 配合 [assets/data-quality-rules.json](../assets/data-quality-rules.json)，
 在每个分层的产出后运行。检查分两类：
 
 **硬断言（失败即阻断）**：
