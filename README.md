@@ -86,19 +86,22 @@ python3 scripts/data_quality_check.py data.csv --rules assets/data-quality-rules
 
 ## 快速开始
 
-安装整个技能库（推荐，可用到 references / scripts / assets 全部内容）：
+**安装整个技能库**（推荐，可用到 references / scripts / assets 全部内容）：
 
 ```bash
 npx skills add skills-repo/data-scientist -g -y
 ```
 
-或只安装单个子技能：
+**按需安装单个子技能**请用**子路径 URL**：
+
+> ⚠️ **D115**：superpower 仓库根 `SKILL.md` 会遮蔽子技能，`skills-repo/data-scientist@<skill>` 语法
+> 中的 `@` 会被 skills CLI 当作 git ref 而失效。单技能安装只能用下面的子路径 URL。
 
 ```bash
-npx skills add skills-repo/data-scientist@data-pipeline-builder -g -y
-npx skills add skills-repo/data-scientist@data-analysis-toolkit -g -y
-npx skills add skills-repo/data-scientist@data-visualizer -g -y
-npx skills add skills-repo/data-scientist@sql-query-writer -g -y
+npx skills add https://github.com/skills-repo/data-scientist/tree/main/skills/data-pipeline-builder -g -y
+npx skills add https://github.com/skills-repo/data-scientist/tree/main/skills/data-analysis-toolkit -g -y
+npx skills add https://github.com/skills-repo/data-scientist/tree/main/skills/data-visualizer -g -y
+npx skills add https://github.com/skills-repo/data-scientist/tree/main/skills/sql-query-writer -g -y
 ```
 
 ## 推荐工作流
